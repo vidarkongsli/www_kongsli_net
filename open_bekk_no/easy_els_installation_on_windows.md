@@ -5,7 +5,7 @@ newer Windows installation. (If you have not done anything serious in PowerShell
 ```posh
 iex (new-object net.WebClient).DownloadString('https://get.scoop.sh')
 ```
-Any you are all set.
+And you are all set.
 
 ## Ready - loading your toolbox
 
