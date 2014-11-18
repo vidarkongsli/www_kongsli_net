@@ -55,8 +55,8 @@ kibanasrv install
 kibanasrv start
 ```
 Here is what it looks like if you run it all:
-![](https://bekkopen.blob.core.windows.net/attachments/d2483cf6-1d82-441f-906d-ac18bd752a98)
+<img src="https://bekkopen.blob.core.windows.net/attachments/d2483cf6-1d82-441f-906d-ac18bd752a98" style="width:100%;margin-left:0" />
 
-[Here](https://raw.githubusercontent.com/vidarkongsli/www_kongsli_net/master/open_bekk_no/install_els_and_kibana.ps1) is the entire PowerShell script that you can run if you wish to get started right away. Alternatively, use this one-liner to install ElasticSearch and Kibana: `iex (new-object net.WebClient).DownloadString('https://raw.githubusercontent.com/vidarkongsli/www_kongsli_net/master/open_bekk_no/install_els_and_kibana.ps1')`.
+[Here](https://raw.githubusercontent.com/vidarkongsli/www_kongsli_net/master/open_bekk_no/install_els_and_kibana.ps1) is the entire PowerShell script that you can run if you wish to get started right away. Alternatively, use this one-liner to install ElasticSearch and Kibana: `iex (new-object net.WebClient).DownloadString('https://kongs.li/elsinst')`.
 
 
