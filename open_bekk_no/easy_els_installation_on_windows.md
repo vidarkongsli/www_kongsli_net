@@ -17,7 +17,7 @@ scoop bucket add extras
 Now that was easy. You are now ready to go.
 
 ## Go! - Install and configure
-In this example, we will install two related applications: ElasticSearch and Kibana. Kibana is a graphical user interface for visualizing data in ElasticSearch. First, lets install and configure ElasticSearch
+In this example, we will install two related applications: [ElasticSearch](http://www.elasticsearch.org/overview/) and [Kibana](http://www.elasticsearch.org/overview/kibana/). Kibana is a graphical user interface for visualizing data in ElasticSearch. First, lets install and configure ElasticSearch
 
 ### Install and configure ElasticSearch
 Installing is simple. Scoop has the possibility to either install an application for the current user, or install 'globally' for all users. Since ElasticSearch is a server application, it makes sense to install it 'globally'. Scoop needs to run as administrator to install global applications, and we need to add the `--global` parameter to the command. Let's go:
