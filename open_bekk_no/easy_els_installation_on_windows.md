@@ -54,7 +54,8 @@ sudo scoop install kibana --global
 kibanasrv install
 kibanasrv start
 ```
-
+Here is what it looks like if you run it all:
+![](https://bekkopen.blob.core.windows.net/attachments/d2483cf6-1d82-441f-906d-ac18bd752a98)
 
 
 
