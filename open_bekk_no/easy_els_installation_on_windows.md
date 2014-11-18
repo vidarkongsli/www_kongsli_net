@@ -1,6 +1,6 @@
 ## Get set - getting Scoop
 
-[Scoop](http://scoop.sh/) is a brilliant package manager for Windows, akin to apt-get and homebrew on other platforms. It is very command line oriented, which makes it ideal for automating the installation process. It is written in PowerShell and is therefore easy to get started with on any
+[Scoop](http://scoop.sh/) is a brilliant package manager for Windows, akin to apt-get and yum on other platforms. It is very command line oriented, which makes it ideal for automating the installation process. It is written in PowerShell and is therefore easy to get started with on any
 newer Windows installation. (If you have not done anything serious in PowerShell on your computer, note that you need to run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned` once in a shell running as administrator.) Here's a one-liner to install Scoop:
 ```posh
 iex (new-object net.WebClient).DownloadString('https://get.scoop.sh')
