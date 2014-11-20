@@ -1,12 +1,12 @@
+[Scoop](http://scoop.sh/) is a brilliant command line installer for Windows, akin to apt-get and yum on other platforms. You might be familiar with [Chocolatey](https://chocolatey.org/), which is quite similar to Scoop. Personally I found Scoop very easy to get started with. I also found it very easy to contribute to it by adding application installation scripts. (You can find an opinionated comparison between Scoop and Chocolatey [here](https://github.com/lukesampson/scoop/wiki/Chocolatey-Comparison).)
+
 ## Get set - getting Scoop
 
-[Scoop](http://scoop.sh/) is a brilliant package manager for Windows, akin to apt-get and yum on other platforms. It is very command line oriented, which makes it ideal for automating the installation process. It is written in PowerShell and is therefore easy to get started with on any
+Scoop is very command line oriented, which makes it ideal for automating the installation process. It is written in PowerShell and is therefore easy to get started with on any
 newer Windows installation. (If you have not done anything serious in PowerShell on your computer, note that you need to run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned` once in a shell running as administrator.) Here's a one-liner to install Scoop:
 ```posh
 iex (new-object net.WebClient).DownloadString('https://get.scoop.sh')
 ```
-And you are all set.
-
 ## Ready - loading your toolbox
 
 To get the show on the road, you need to install a few tools. First, `sudo` is a handy tool to run a script as administrator - similar to what you would do in *nix. Next, Scoop uses the concept of a bucket which is a container for applications that you can install. Scoop comes with a build-in bucket and with an 'extras' bucket. We need to enable the latter manually, and for that we need to install Git. Let's install the tools and get add the bucket:
@@ -14,8 +14,6 @@ To get the show on the road, you need to install a few tools. First, `sudo` is a
 scoop install sudo git
 scoop bucket add extras
 ```
-Now that was easy. You are now ready to go.
-
 ## Go! - Install and configure
 In this example, we will install two related applications: [Elasticsearch](http://www.elasticsearch.org/overview/) and [Kibana](http://www.elasticsearch.org/overview/kibana/). Kibana is a graphical user interface for visualizing data in Elasticsearch. First, lets install and configure Elasticsearch
 
