@@ -39,6 +39,7 @@ kibanasrv install
 kibanasrv start
 ```
 Now, you have Kibana running at http://localhost:8080.
+<img src="https://bekkopen.blob.core.windows.net/attachments/d2742c59-86bd-4e35-8d9a-f4323bb13814" style="width:100%;margin-left:0" />
 ## Summary
 Now, to drive the point home, let's summarize everything to get a comprehensive script to do all the work:
 ```posh
