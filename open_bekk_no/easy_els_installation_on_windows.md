@@ -18,7 +18,7 @@ scoop bucket add extras
 In this example, we will install two related applications: [Elasticsearch](http://www.elasticsearch.org/overview/) and [Kibana](http://www.elasticsearch.org/overview/kibana/). Kibana is a graphical user interface for visualizing data in Elasticsearch. First, lets install and configure Elasticsearch
 
 ### Install and configure Elasticsearch
-Installing is simple. Scoop has the possibility to either install an application for the current user, or install 'globally' for all users. Since Elasticsearch is a server application, it makes sense to install it 'globally'. Scoop needs to run as administrator to install global applications, and we need to add the `--global` parameter to the command. Let's go:
+Installing is simple. Scoop has the possibility to either install an application for the current user, or install 'globally' for all users. Since Elasticsearch is a server application, it makes sense to install it 'globally'. Scoop needs to run as administrator to install global applications, and we need to add the `--global` parameter to the command.
 ```posh
 sudo scoop install elasticsearch --global
 ```
@@ -27,9 +27,9 @@ Now that Elasticsearch is installed, let's define a Windows service to run it, a
 elssrv install
 elssrv start
 ```
-That's it. Now Elasticsearch should be accessible on http://localhost:9200.
+Now Elasticsearch should be accessible on http://localhost:9200.
 ### Install and configure Kibana
-Let's install Kibana, the web-based data visualization tool for Elasticsearch. This is just as simple as installing Elasticsearch itself:
+Kibana is a very nice tool for querying and visualizing data in Elasticsearch. It is a Javascript-based web application and the distribution is just the web application files that needs to be served by a web server. When I decided to use Scoop for Elasticsearch installation, there were no installation script for Kibana in Scoop. Luckily, it was very easy to add it as the Scoop source files and application lists are maintained on GitHub. With the new installation definition in place, here's how you install Kibana:
 ```posh
 sudo scoop install kibana --global
 ```
@@ -55,6 +55,6 @@ kibanasrv start
 Here is what it looks like if you run it all:
 <img src="https://bekkopen.blob.core.windows.net/attachments/d2483cf6-1d82-441f-906d-ac18bd752a98" style="width:100%;margin-left:0" />
 
-[Here](https://raw.githubusercontent.com/vidarkongsli/www_kongsli_net/master/open_bekk_no/install_els_and_kibana.ps1) is the entire PowerShell script that you can run if you wish to get started right away. Alternatively, use this one-liner to install Elasticsearch and Kibana: `iex (new-object net.WebClient).DownloadString('https://kongs.li/elsinst')`.
+[Here](https://raw.githubusercontent.com/vidarkongsli/www_kongsli_net/master/open_bekk_no/install_els_and_kibana.ps1) is the entire PowerShell script that you can run if you wish to get started right away. Alternatively, use this one-liner to install Elasticsearch and Kibana: `iex (new-object net.WebClient).DownloadString('http://kongs.li/elsinst')`.
 
 
